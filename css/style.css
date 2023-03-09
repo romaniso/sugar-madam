@@ -6,7 +6,7 @@
   --dark-color: #110404;
   --cream-color: #fffaf7;
   --grey-color: #c2b9b9;
-  --gradinet-light: linear-gradient(
+  --gradient-light: linear-gradient(
     126deg,
     rgb(224, 224, 218) 40%,
     rgb(221, 171, 177) 100%
@@ -51,6 +51,7 @@ body {
   color: #110404;
   font-weight: 400;
   font-family: "Cormorant", serif;
+  scroll-behavior: smooth;
 }
 .wrapper {
   min-height: 100%;
@@ -76,6 +77,18 @@ body {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+.heading {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: calc(60 / 42 * 100%);
+  letter-spacing: 0.2px;
+  color: var(--pink-color);
+}
+@media (max-width: 479px) {
+  .heading {
+    font-size: 36px;
+  }
 }
 /* -HEADER----------------------------------------- */
 .header {
@@ -160,8 +173,8 @@ body {
 .page__main-block {
 }
 .page__services {
-  /*margin: -50px 0 0 0;*/
-  padding: 50px 0;
+}
+.prices__container {
 }
 
 /* --MAIN-BLOCK------------------------------------- */
@@ -266,7 +279,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .main-block__image img {
   object-position: top;
@@ -283,9 +296,12 @@ body {
 }
 /* --SERVICES-------------------------------------- */
 .services {
+  /*margin: -50px 0 0 0;*/
+  padding: 50px 0;
   background: rgb(255, 201, 234);
-  background: var(--gradinet-light);
+  background: var(--gradient-light);
   border-top: 2px solid var(--pink-lighter-color);
+  border-bottom: 2px solid var(--pink-lighter-color);
 }
 .services__container {
 }
@@ -328,7 +344,7 @@ body {
   border: 2px solid #ffe9f8;
   text-align: center;
   background-color: var(--cream-color);
-  transition: transform, border-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .item-service:hover {
   transform: scale(1.03);
@@ -376,7 +392,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 .item-service__image img {
   object-position: center;
@@ -417,6 +433,109 @@ body {
   .item-service__text {
     font-size: 16px;
   }
+}
+/* --PRICES--------------------------------------- */
+.page__prices {
+}
+.prices {
+  /*margin: -50px 0 0 0;*/
+  padding: 50px 0;
+  background-color: var(--cream-color);
+  position: relative;
+}
+.prices__body {
+  position: relative;
+  z-index: 20;
+}
+.prices__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+.prices__image img {
+  object-position: center;
+}
+.prices__title {
+  text-align: center;
+  /*margin: 0px 0px 10px 0px;*/
+}
+.prices__type {
+}
+.type-price {
+}
+.type-price__name {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: calc(32 / 24 * 100%);
+  letter-spacing: 0.2px;
+  color: var(--pink-darker-color);
+}
+.type-price__name:not(:last-child) {
+  margin: 35px 60px 10px;
+}
+.type-price__name::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 15px;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--pink-lighter-color);
+}
+.type-price__table {
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.table thead {
+  /*background: var(--pink-lighter-color);*/
+  background: rgb(255, 201, 234);
+  background: var(--gradient-light);
+}
+.table thead tr th {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.35px;
+  color: var(--dark-color);
+  padding: 8px;
+  vertical-align: top;
+  text-align: center;
+}
+.table tbody tr td {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: var(--dark-color);
+  padding: 8px;
+  border-bottom: 1px solid var(--pink-lighter-color);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.486);
+}
+.table tbody tr td:first-child {
+  font-weight: 700;
+  color: var(--pink-darker-color);
+  position: relative;
+  padding-left: 45px;
+  text-align: left;
+}
+.table tbody tr td:first-child::before {
+  position: absolute;
+  left: 20px;
+  top: calc(50% - 7.5px);
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: url(../images/prices/tulip2.png) 50% 50% no-repeat;
+  opacity: 0.7;
 }
 
 /* --FOOTER---------------------------------------- */

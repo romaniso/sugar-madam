@@ -6,6 +6,6 @@ a website for a beauty salon
 
 - [ ] Reservation callendar
 - [ ] Fixed action button
-- [ ] Carousel of images
+- [x] Carousel of images
 - [x] Price list
 - [ ] Blog (in future)

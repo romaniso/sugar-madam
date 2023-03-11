@@ -59,11 +59,38 @@
             </div>
           </div>
           <div class="main-block__image _ibg">
-            <img
-              src="images/main-block/hero-image.jpg"
-              alt="cover"
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="images/main-block/hero-768-576.jpg"
+              />
+              <source
+                media="(max-width: 993px)"
+                srcset="images/main-block/hero-993-745.jpg"
+              />
+              <img
+                src="images/main-block/hero-1920-1440.jpg"
+                alt="Waza z tulipanami o kolorze różowym"
+                loading="lazy"
+              />
+            </picture>
+            <!--<img
+              srcset="
+                images/main-block/hero-480-360.jpg    480w,
+                images/main-block/hero-768-576.jpg    768w,
+                images/main-block/hero-993-745.jpg    993w,
+                images/main-block/hero-1920-1440.jpg 1920w
+              "
+              sizes="
+              (max-width: 480px) 480px,
+              (max-width: 768px) 768px,
+              (max-width: 993px) 993px,
+              1920px
+              "
+              src="images/main-block/hero-1920-1440.jpg"
+              alt="Waza z tulipanami o kolorze różowym"
               loading="lazy"
-            />
+            />-->
           </div>
         </section>
         <section class="page__services services" id="services">

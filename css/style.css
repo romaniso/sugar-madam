@@ -9,7 +9,7 @@
   --gradient-light: linear-gradient(
     126deg,
     rgb(224, 224, 218) 40%,
-    rgb(221, 171, 177) 100%
+    rgb(255, 194, 232) 100%
   );
   --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -648,7 +648,7 @@ body {
   width: 60px;
 }
 .gallery__arrow--left {
-  left: 10px;
+  left: -10px;
   transform: translateY(-50%) rotate(-180deg);
 }
 .gallery__arrow--right {
@@ -675,7 +675,7 @@ body {
 .carousel img {
   height: 340px;
   object-fit: cover;
-  margin-left: 10px;
+  margin-left: 14px;
   width: calc(100% / 3);
   box-shadow: var(--box-shadow);
   /*border: 2px solid #ffe9f8;*/

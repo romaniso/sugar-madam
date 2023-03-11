@@ -23,7 +23,7 @@ const changeArrowVisiblity = () => {
 
 arrows.forEach((arrow) => {
   arrow.addEventListener("click", () => {
-    let firstImgWidth = firstImg.clientWidth + 10; // first image width + left margin + border from styles
+    let firstImgWidth = firstImg.clientWidth + 14; // first image width + left margin + border from styles
     carousel.scrollLeft += arrow.id === "left" ? -firstImgWidth : firstImgWidth;
     setTimeout(() => changeArrowVisiblity(), 60);
   });

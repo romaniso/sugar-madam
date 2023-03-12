@@ -49,10 +49,12 @@
                 bezboleśnie usuniesz niechcące włoski.
               </div>
               <div class="main-block__buttons">
-                <a href="#services" class="main-block__button">Poznaj ofertę</a>
+                <a href="#services" class="main-block__button button"
+                  >Poznaj ofertę</a
+                >
                 <a
                   href="#calendar"
-                  class="main-block__button main-block__button--accent"
+                  class="main-block__button main-block__button--accent button button--accent"
                   >Umów się</a
                 >
               </div>
@@ -153,7 +155,9 @@
         <section class="page__prices prices" id="prices">
           <div class="prices__container _container">
             <div class="prices__body">
-              <h2 class="prices__title heading">Cennik</h2>
+              <div class="prices__header-block header-block">
+                <h2>Cennik</h2>
+              </div>
               <section class="prices__type type-price">
                 <h3 class="type-price__name">Nogi</h3>
                 <table class="type-price__table table">
@@ -348,8 +352,8 @@
           <div class="prices__image _ibg">
             <picture>
               <source
-                media="(max-width: 414px)"
-                srcset="images/prices/cactus-414-276.jpg"
+                media="(max-width: 550px)"
+                srcset="images/prices/cactus-550-663.jpg"
               />
               <source
                 media="(max-width: 768px)"
@@ -446,6 +450,86 @@
               data-arrow
               id="right"
               loading="lazy"
+            />
+          </div>
+        </section>
+        <section class="page__contact contact" id="contact">
+          <div class="contact__container _container">
+            <div class="contact__body">
+              <div class="contact__info info-contact">
+                <div class="info-contact__header-block header-block">
+                  <h2>Skontaktuj się ze&nbsp;mną</h2>
+                  <p>Wybierz się na łagodną depilację</p>
+                </div>
+                <address class="info-contact__content">
+                  <a
+                    class="info-contact__phone button"
+                    href="tel:578275828"
+                    target="_blank"
+                  >
+                    <img src="images/contact/phone.svg" alt="Telefon" />
+                    578 825 828
+                  </a>
+                  <a
+                    class="info-contact__email button"
+                    href="mailto:sugar-madam@gmail.com"
+                    target="_blank"
+                  >
+                    <img src="images/contact/email.svg" alt="Email" />
+                    sugar-madam@gmail.com
+                  </a>
+                  <div class="info-contact__address button">
+                    <img src="images/contact/address.svg" alt="Address" />
+                    <p>Strzembosza 3, lokal 3, Lublin</p>
+                  </div>
+                </address>
+                <section class="info-contact__hours">
+                  <p>
+                    poniedziałek – piątek <span>9:00-19:00</span> <br />sobota
+                    <span>10:00-15:00</span>
+                  </p>
+                </section>
+                <section class="info-contact__socials socials">
+                  <a
+                    href="https://www.instagram.com/depilacja_woskiem_sugar_lublin/"
+                    target="_blank"
+                    class="socials__instagram"
+                    ><img
+                      src="images/contact/instagram.svg"
+                      alt="Mój profil na instagramie"
+                  /></a>
+                  <a href="#" target="_blank" class="socials__facebook"
+                    ><img
+                      src="images/contact/facebook.svg"
+                      alt="Mój profil na facebooku"
+                  /></a>
+                  <a
+                    href="https://www.tiktok.com/@lillys_waxing_ll?is_from_webapp=1&sender_device=pc"
+                    target="_blank"
+                    class="socials__tiktok"
+                    ><img
+                      src="images/contact/tiktok.svg"
+                      alt="Mój profil na tiktoku"
+                  /></a>
+                </section>
+              </div>
+              <div class="contact__map map-contact">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9984.87822926065!2d22.575528793787694!3d51.27027750013537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472250b47f6473fb%3A0x3efc8bd8eb885410!2sTomasza%20Strzembosza%203%2C%2020-001%20Lublin!5e0!3m2!1spl!2spl!4v1678649706505!5m2!1spl!2spl"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="contact__image _ibg">
+            <img
+              src="images/contact/contact.jpg"
+              alt="Kwiatek na czarnym tle"
             />
           </div>
         </section>

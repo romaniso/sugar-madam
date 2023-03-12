@@ -61,6 +61,10 @@
           <div class="main-block__image _ibg">
             <picture>
               <source
+                media="(max-width: 414px)"
+                srcset="images/main-block/hero-414-311.jpg"
+              />
+              <source
                 media="(max-width: 768px)"
                 srcset="images/main-block/hero-768-576.jpg"
               />
@@ -74,28 +78,10 @@
                 loading="lazy"
               />
             </picture>
-            <!--<img
-              srcset="
-                images/main-block/hero-480-360.jpg    480w,
-                images/main-block/hero-768-576.jpg    768w,
-                images/main-block/hero-993-745.jpg    993w,
-                images/main-block/hero-1920-1440.jpg 1920w
-              "
-              sizes="
-              (max-width: 480px) 480px,
-              (max-width: 768px) 768px,
-              (max-width: 993px) 993px,
-              1920px
-              "
-              src="images/main-block/hero-1920-1440.jpg"
-              alt="Waza z tulipanami o kolorze różowym"
-              loading="lazy"
-            />-->
           </div>
         </section>
         <section class="page__services services" id="services">
           <div class="services__container _container">
-            <!--<h2 class="services__title heading">Usługi</h2>-->
             <div class="services__body">
               <div class="services__column">
                 <article class="services__item item-service">
@@ -360,7 +346,25 @@
             </div>
           </div>
           <div class="prices__image _ibg">
-            <img src="images/prices/cactus.jpg" alt="cover" loading="lazy" />
+            <picture>
+              <source
+                media="(max-width: 414px)"
+                srcset="images/prices/cactus-414-276.jpg"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="images/prices/cactus-768-512.jpg"
+              />
+              <source
+                media="(max-width: 993px)"
+                srcset="images/prices/cactus-993-662.jpg"
+              />
+              <img
+                src="images/prices/cactus-1920-1280.jpg"
+                alt="Kwitnący kaktus na białym tle"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </section>
         <section class="page__gallery gallery" id="gallery">

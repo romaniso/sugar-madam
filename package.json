@@ -1,0 +1,25 @@
+{
+  "name": "sugar-madam",
+  "version": "1.0.0",
+  "description": "a website for a beauty salon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romaniso/sugar-madam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romaniso/sugar-madam/issues"
+  },
+  "homepage": "https://github.com/romaniso/sugar-madam#readme",
+  "devDependencies": {
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
+  }
+}

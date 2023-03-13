@@ -216,7 +216,7 @@ body {
   box-shadow: var(--box-shadow);
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 .action.active .action__list {
   opacity: 1;
@@ -244,6 +244,9 @@ body {
 @media (max-width: 479px) {
   .action {
     bottom: 5%;
+  }
+  .action__list {
+    bottom: 15%;
   }
 }
 @media (max-width: 767px) {

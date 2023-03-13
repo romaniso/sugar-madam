@@ -1,3 +1,10 @@
+//ACTION BUTTON
+const action = document.querySelector("[data-action]");
+action.addEventListener("click", () => {
+  action.classList.toggle("active");
+});
+
+//CAROUSEL
 const carousel = document.querySelector("[data-carousel]");
 const firstImg = carousel.querySelectorAll("[data-carousel] img")[0];
 const arrows = document.querySelectorAll("[data-arrow]");

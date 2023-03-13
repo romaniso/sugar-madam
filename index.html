@@ -38,6 +38,40 @@
         </div>
       </header>
       <main class="page">
+        <button class="page__action action" data-action>
+          <span class="action__switch"
+            ><img src="images/action.svg" alt="Kliknij żeby się skontaktować"
+          /></span>
+          <ul class="action__list">
+            <li class="action__list-item">
+              <a class="action__link" href="tel:578275828" target="_blank">
+                <img src="images/contact/phone.svg" alt="Telefon" />
+                Zadzwoń do mnie
+              </a>
+            </li>
+            <li class="action__list-item">
+              <a
+                class="action__link"
+                href="mailto:sugar-madam@gmail.com"
+                target="_blank"
+              >
+                <img src="images/contact/email.svg" alt="Email" />
+                Napisz do mnie
+              </a>
+            </li>
+            <li class="action__list-item">
+              <a
+                class="action__link"
+                href="https://www.instagram.com/depilacja_woskiem_sugar_lublin/"
+                target="_blank"
+                ><img
+                  src="images/instagram-pink.svg"
+                  alt="Mój profil na instagramie"
+                />Znajdź mnie</a
+              >
+            </li>
+          </ul>
+        </button>
         <section class="page__main-block main-block">
           <div class="main-block__container _container">
             <div class="main-block__body">
@@ -53,7 +87,7 @@
                   >Poznaj ofertę</a
                 >
                 <a
-                  href="#calendar"
+                  href="#contact"
                   class="main-block__button main-block__button--accent button button--accent"
                   >Umów się</a
                 >
@@ -534,7 +568,14 @@
           </div>
         </section>
       </main>
-      <footer class="footer">Footer</footer>
+      <footer class="footer">
+        <div class="footer__container _container">
+          <a href="#" class="footer__logo">
+            <img src="images/logo.svg" alt="Logo" />
+          </a>
+          <p class="footer__copy">© 2023 Sugar Madam</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

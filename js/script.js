@@ -1,3 +1,5 @@
+import "../css/style.scss";
+
 //ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 const servicesSection = document.getElementById("services");

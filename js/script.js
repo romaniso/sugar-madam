@@ -1,4 +1,4 @@
-import "../css/style.scss";
+import "../scss/style.scss";
 
 //ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -45,12 +45,12 @@ gsap.fromTo(
 );
 gsap.fromTo(
   contactSection.querySelector(".info-contact"),
-  { x: "-=100", opacity: 0 },
+  { x: "-=50", opacity: 0.2 },
   {
     x: 0,
     opacity: 1,
     stagger: 0.2,
-    duration: 3,
+    duration: 2,
     ease: "easeInOut",
     scrollTrigger: { trigger: "#contact", start: "top 100%", scrub: 1 },
   }

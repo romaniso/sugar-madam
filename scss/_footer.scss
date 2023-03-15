@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0px;
+  background: rgb(255, 201, 234);
+  background: $gradient-light;
+  border-top: 2px solid $pink-lighter-color;
+  border-bottom: 2px solid $pink-lighter-color;
+  @media (max-width: 992px) {
+    padding: 15px 0px;
+  }
+  @media (max-width: 479px) {
+    padding: 10px 0px;
+  }
+  &__container > *:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+  }
+  &__logo {
+    width: 160px;
+  }
+  &__copy {
+    margin: 20px 0px 0px 0px;
+    color: $dark-color;
+  }
+}

@@ -9,7 +9,7 @@ a website for a beauty salon
 - [x] Carousel of images
 - [x] Price list
 - [ ] Blog (in future)
-- [ ] Webpack config
+- [x] Webpack config
 - [x] Optimize assets for all screen dimensions
 - [ ] Preloader
 - [x] Convert styles into SCSS (maybe)

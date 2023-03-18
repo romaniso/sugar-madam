@@ -46,14 +46,17 @@ export default class Scroll {
     );
     gsap.fromTo(
       contactSection.querySelector(".info-contact"),
-      { x: "-=50", opacity: 0.2 },
+      { x: "-=50" },
       {
         x: 0,
-        opacity: 1,
         stagger: 0.2,
         duration: 2,
         ease: "easeInOut",
-        scrollTrigger: { trigger: "#contact", start: "top 100%", scrub: 1 },
+        scrollTrigger: {
+          trigger: "#contact",
+          start: "top 150%",
+          scrub: 1,
+        },
       }
     );
     gsap.fromTo(

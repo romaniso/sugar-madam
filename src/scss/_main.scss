@@ -299,7 +299,7 @@
       tbody tr td,
       thead tr th {
         vertical-align: middle;
-        text-align: center;
+        text-align: left;
         font-size: 16px;
         letter-spacing: 0.3px;
       }
@@ -317,8 +317,8 @@
     @media (max-width: 479px) {
       tbody tr td:first-child,
       thead tr th:first-child {
-        text-align: center;
-        padding-left: 10px;
+        text-align: left;
+        padding-left: 18px;
       }
     }
     tbody tr td:first-child::before {

@@ -13,6 +13,8 @@ module.exports = {
   mode: "development",
   devServer: {
     port: 9999,
+    open: true,
+    hot: true,
     static: {
       directory: path.resolve(__dirname, "./build"),
     },

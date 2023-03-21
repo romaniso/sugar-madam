@@ -50,12 +50,12 @@ export default class Scroll {
       {
         x: 0,
         stagger: 0.2,
-        duration: 2,
+        duration: 3,
         ease: "easeInOut",
         scrollTrigger: {
           trigger: "#contact",
           start: "top 150%",
-          scrub: 1,
+          // scrub: 1,
         },
       }
     );

@@ -11,5 +11,5 @@ a website for a beauty salon
 - [ ] Blog (in future)
 - [x] Webpack config
 - [x] Optimize assets for all screen dimensions
-- [ ] Preloader
+- [x] Preloader
 - [x] Convert styles into SCSS (maybe)

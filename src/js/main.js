@@ -1,6 +1,7 @@
 import "../scss/style.scss";
 import Scroll from "./ScrollTrigger";
 import Carousel from "./Carousel";
+import onLoad from "./Preloader";
 
 //ACTION BUTTON
 const action = document.querySelector("[data-action]");
@@ -12,3 +13,4 @@ const scrollTrigger = new Scroll();
 scrollTrigger.init();
 const carousel = new Carousel();
 carousel.init();
+onLoad();

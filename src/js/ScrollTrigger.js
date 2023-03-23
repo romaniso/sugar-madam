@@ -10,10 +10,9 @@ export default class Scroll {
 
     gsap.fromTo(
       servicesSection.children,
-      { y: "+=100", opacity: 0 },
+      { y: "+=100" },
       {
         y: 0,
-        opacity: 1,
         stagger: 0.2,
         duration: 2,
         ease: "easeInOut",
@@ -34,7 +33,7 @@ export default class Scroll {
     );
     gsap.fromTo(
       gallerySection.querySelector(".carousel"),
-      { y: 0, opacity: 0 },
+      { y: 0, opacity: 0.4 },
       {
         y: 0,
         opacity: 1,

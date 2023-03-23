@@ -169,3 +169,32 @@
     opacity: 0.6;
   }
 }
+/*--PRELOADER------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  .spinner {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 6px solid $pink-color;
+    border-color: $pink-color $pink-color $pink-darker-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1s infinite linear;
+    transition: all 0.3s ease;
+  }
+  &.hidden {
+    display: none;
+  }
+}

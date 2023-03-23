@@ -28,9 +28,9 @@ $box-shadow-light: 0px 0px 10px rgba(255, 255, 255, 0.553);
 }
 @keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }

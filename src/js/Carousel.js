@@ -8,7 +8,9 @@ export default class Carousel {
       isDragging = false,
       prevPageX,
       prevScrollLeft,
-      positionDiff;
+      positionDiff,
+      startingPoint,
+      endingPoint;
 
     const changeArrowVisiblity = () => {
       let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
@@ -48,8 +50,22 @@ export default class Carousel {
         positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
     };
 
+    const isVerticalMove = () => {
+      carousel.addEventListener("touchstart", (e) => {
+        startingPoint = e.touches[0].clientY;
+      });
+      carousel.addEventListener("touchmove", (e) => {
+        endingPoint = e.touches[0].clientY;
+      });
+
+      if (startingPoint + 50 < endingPoint || endingPoint > startingPoint + 50)
+        return true;
+      return false;
+    };
+
     const dragStart = (e) => {
       //update global variables value on mouse down event
+      if (isVerticalMove()) return;
       isDragStart = true;
       prevPageX = e.pageX || e.touches[0].pageX;
       prevScrollLeft = carousel.scrollLeft;
@@ -57,6 +73,7 @@ export default class Carousel {
 
     const onDrag = (e) => {
       //scroll images to the left according to the mouse pointer
+
       if (!isDragStart) return;
       e.preventDefault();
       isDragging = true;

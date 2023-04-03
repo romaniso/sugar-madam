@@ -19,6 +19,9 @@
     @media (max-width: 479px) {
       padding: 140px 0px 200px 0px;
     }
+    @media (max-width: 450px) {
+      text-align: center;
+    }
     & > *:not(:last-child) {
       margin: 0px 0px 35px 0px;
     }
@@ -54,8 +57,9 @@
     min-height: 40px;
     padding: 5px 36px;
     margin: 20px 0;
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       flex: 1 1 100%;
+      margin: 10px 0;
       @media (min-width: 400px) {
         &:not(:last-child) {
           margin-right: 10px;
@@ -526,7 +530,7 @@
       left: -10px;
       transform: translateY(-50%) rotate(-180deg);
       @media (max-width: 1144px) {
-        left: 50px;
+        left: 35px;
       }
     }
     &--right {

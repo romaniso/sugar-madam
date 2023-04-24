@@ -1,6 +1,6 @@
 # SUGAR MADAM
 
-a website for a beauty salon
+A webpage for a beaty salon which presents its services and works using carousel media gallery. It is developed using plain HTML, CSS and vanilla JS. The main goal was to create a simple landing page which is highly optimized in website loading speed.
 
 ## To do list
 

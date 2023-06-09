@@ -8,6 +8,9 @@
     min-height: 100px;
     display: flex;
     align-items: center;
+    @media (max-width: 767px) {
+      justify-content: space-between;
+    }
     @media (max-width: 479px) {
       min-height: 80px;
     }
@@ -25,20 +28,41 @@
       margin: 0px 0px 0px 80px;
     }
     @media (max-width: 767px) {
-      margin: 0px 0px 0px 70px;
+      margin: 0px 0px 0px 0px;
     }
-    // @media (max-width: 479px) {
-    //   margin: 0px 0px 0px 70px;
-    // }
   }
   .menu {
     padding: 5px 0;
+
+    &.opened {
+      padding-right: 5px 30px 5px 0;
+      .menu__list {
+        display: flex;
+      }
+    }
     &__list {
-      flex-wrap: wrap;
       display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 768px) {
+        display: none;
+        top: 10px;
+        right: 10px;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        height: 360px;
+        background-color: $pink-color;
+        opacity: 0.8;
+        border-radius: 10px;
+      }
     }
     &__item:not(:last-child) {
       margin: 0px 17px 0px 0px;
+      @media (max-width: 768px) {
+        margin: 0px 0px 30px 0px;
+      }
     }
     &__link {
       color: $dark-color;
@@ -49,9 +73,67 @@
       padding: 5px;
       &:hover {
         color: $pink-color;
+        @media (max-width: 768px) {
+          color: rgb(255, 229, 137);
+        }
+      }
+      @media (max-width: 768px) {
+        color: $cream-color;
+        position: relative;
+        z-index: 100;
+        font-size: 20px;
       }
       @media (max-width: 479px) {
         font-size: 18px;
+      }
+    }
+  }
+  //  Burger
+  .burger {
+    position: fixed;
+    top: 30px;
+    right: 25px;
+    width: 25px;
+    height: 20px;
+    z-index: 100;
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 25px;
+      height: 4px;
+      border-radius: 5px;
+      background-color: $pink-color;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 25px;
+      height: 4px;
+      border-radius: 5px;
+      background-color: $pink-color;
+    }
+    span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 4px;
+      border-radius: 5px;
+      background-color: $pink-color;
+    }
+    &.opened {
+      &::before,
+      &::after,
+      span {
+        background-color: $cream-color;
       }
     }
   }

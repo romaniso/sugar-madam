@@ -11,6 +11,13 @@ burger.addEventListener("click", function () {
   menu.classList.toggle("opened");
 });
 
+document.querySelector(".page").addEventListener("click", () => {
+  if (menu.classList.contains("opened")) {
+    burger.classList.toggle("opened");
+    menu.classList.toggle("opened");
+  }
+});
+
 //ACTION BUTTON
 const action = document.querySelector("[data-action]");
 action.addEventListener("click", () => {
